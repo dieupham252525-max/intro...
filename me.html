@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân - Phạm Điều</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        header {
+            background: linear-gradient(135deg, #007bb5, #00adf2);
+            color: white;
+            text-align: center;
+            padding: 3rem 1rem;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            opacity: 0.9;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1.5rem;
+        }
+
+        .card {
+            background: white;
+            border-radius: 12px;
+            padding: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+
+        h2 {
+            color: #007bb5;
+            border-bottom: 2px solid #eef2f5;
+            padding-bottom: 0.5rem;
+            margin-bottom: 1.2rem;
+        }
+
+        .info-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 1rem;
+        }
+
+        .info-item {
+            background: #f8fafc;
+            padding: 1rem;
+            border-radius: 8px;
+            border-left: 4px solid #007bb5;
+        }
+
+        .info-item strong {
+            display: block;
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .hobbies-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 1rem;
+        }
+
+        .hobby-card {
+            background: #f8fafc;
+            border-radius: 8px;
+            padding: 1.2rem;
+            text-align: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .hobby-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0,0,0,0.1);
+        }
+
+        .hobby-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        footer {
+            text-align: center;
+            padding: 1.5rem;
+            color: #777;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Xin chào, tôi là Phạm Điều! 👋</h1>
+        <p>Chào mừng bạn đến với trang cá nhân của tôi</p>
+    </header>
+
+    <div class="container">
+        <!-- Thông tin cơ bản -->
+        <section class="card">
+            <h2>Thông tin cá nhân</h2>
+            <div class="info-grid">
+                <div class="info-item">
+                    <strong>Họ và tên</strong>
+                    Phạm Điều
+                </div>
+                <div class="info-item">
+                    <strong>Năm sinh</strong>
+                    2001
+                </div>
+                <div class="info-item">
+                    <strong>Quê quán</strong>
+                    Hà Nội, Việt Nam
+                </div>
+            </div>
+        </section>
+
+        <!-- Sở thích -->
+        <section class="card">
+            <h2>Sở thích & Đam mê</h2>
+            <div class="hobbies-grid">
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎣</div>
+                    <h3>Câu cá</h3>
+                    <p>Thư giãn và rèn luyện sự kiên nhẫn</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🎬</div>
+                    <h3>Phim Hàn Quốc</h3>
+                    <p>Yêu thích các bộ phim truyền hình & điện ảnh</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🇨🇳</div>
+                    <h3>Du lịch Trung Quốc</h3>
+                    <p>Khám phá văn hóa và danh lam thắng cảnh</p>
+                </div>
+                <div class="hobby-card">
+                    <div class="hobby-icon">🏊‍♂️</div>
+                    <h3>Bơi lội</h3>
+                    <p>Rèn luyện sức khỏe và năng lượng tích cực</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Phạm Điều. All rights reserved.</p>
+    </footer>
+
+</body>
+</html>
